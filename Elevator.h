@@ -6,7 +6,6 @@
 #include <string>
 using namespace std;
 
-
 class Elevator {
     private:
         int id;
@@ -26,12 +25,10 @@ class Elevator {
         string getDirection() const;
         string getDoorState() const;
         bool hasRequests() const;
-        
+
         // behaviors
         void addRequest(int floor);
-        void step();
-        void openDoor();
-        void closeDoor();
+        void step(vector<string>& log);
         string getStatusString() const;
 
 
