@@ -34,4 +34,6 @@ class Elevator {
         string getStatusString() const;
 
 
-}
+};
+
+#endif
