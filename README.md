@@ -1,2 +1,1 @@
-# CIS-278-Elevator-Simulation
-#
+# CIS-278-Elevator-Simulation in C++
