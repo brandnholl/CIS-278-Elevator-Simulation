@@ -1,6 +1,7 @@
 #ifndef ELEVATOR_H
 #define ELEVATOR_H
 
+#include "RequestSystem.h"
 #include <vector>
 #include <string>
 using namespace std;

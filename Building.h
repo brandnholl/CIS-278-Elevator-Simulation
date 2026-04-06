@@ -2,6 +2,7 @@
 #define BUILDING_H
 
 #include "Elevator.h"
+#include "RequestSystem.h"
 #include <vector>
 using namespace std;
 
