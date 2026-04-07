@@ -12,6 +12,10 @@ Features
 -User input during runtime
 -Step-based simulation
 
+## Demo
+
+![Elevator Simulation Demo](Demo.gif)
+
 ## How to Compile the Simulation:
 
 Make sure you have g++ and the ncurses library installed
@@ -43,4 +47,4 @@ g++ -std=c++17 main.cpp Building.cpp Elevator.cpp RequestSystem.cpp -lncurses -o
 Team Members
 Brandon Holland | Built Building, RequestSystem, Main, Elevator classes(cpp), UI, and debugging |
 James So | Elevator, Building, RequestSystem logic(headers) & debugging
-Han Bhone Hset | |
+Han Bhone Hset |Elevator, Building, Main, and debuggin |
