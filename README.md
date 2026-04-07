@@ -12,12 +12,34 @@ Features
 -User input during runtime
 -Step-based simulation
 
-How to Use
+## How to Compile the Simulation:
+
+Make sure you have g++ and the ncurses library installed
+```bash
+g++ -std=c++17 main.cpp Building.cpp Elevator.cpp RequestSystem.cpp -lncurses -o elevator
+```
+
+##How to Run
+```bash
+./elevator
+```
+
 -Enter floor requests when prompted
 -The system will assign an elevator
 -Watch the console to see movement and status updates
 
+## Commands
+| Command | Shortcut | Description |
+|---|---|---|
+| `call <floor>` | `c <floor>` | Call an elevator to a floor (hall button) |
+| `go <id> <floor>` | `g <id> <floor>` | Send elevator #id directly to a floor |
+| `pause` | `p` | Pause the simulation |
+| `resume` | `r` | Resume the simulation |
+| `speed <ms>` | — | Set simulation speed in milliseconds (200–5000) |
+| `help` | `h` | Show command reference |
+| `quit` | `q` | Exit the simulation |
+
 Team Members
-Brandon Holland
-James So
-Han Bhone Hset
+Brandon Holland | Built Building, RequestSystem, Main, Elevator classes(cpp), UI, and debugging |
+James So | Elevator, Building, RequestSystem logic(headers) & debugging
+Han Bhone Hset | |
