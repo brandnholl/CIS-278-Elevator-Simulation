@@ -96,6 +96,7 @@ void drawLog(Building& building) {
 void drawInput(const string& input) {
     werase(inputWin);
     box(inputWin, 0, 0);
+    wattron(inputWin, COLOR_PAIR(1) | A_BOLD);
     mvwprintw(inputWin, 1, 1, "> %s", input.c_str());
     mvwprintw(inputWin, 2, 1, "call <floor> | go <elev> <floor> | pause | resume | speed <ms> | help | quit");
     wrefresh(inputWin);
@@ -210,6 +211,8 @@ int main() {
     noecho();
     keypad(stdscr, TRUE);
     curs_set(1);
+
+    scrollok(stdscr, FALSE);
     refresh();
 
     // Setup colors
