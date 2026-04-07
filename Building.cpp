@@ -55,16 +55,14 @@ void Building::requestFloor(int elevatorId, int floor) {
 
 void Building::simulateStep() {
     for (int i = 0; i < elevators.size(); i++) {
-        int prevFloor = elevators[i].getCurrentFloor();
         elevators[i].step(messageLog);
 
         while (messageLog.size() > MAX_LOG_LINES) {
             messageLog.erase(messageLog.begin());
         }
 
-        int newFloor = elevators[i].getCurrentFloor();
-        if (prevFloor != newFloor || !elevators[i].hasRequests()) {
-            requestSystem.removeRequest(newFloor);
+        if (elevators[i].getDoorState() == "open") {
+            requestSystem.removeRequest(elevators[i].getCurrentFloor());
         }
     }
 }

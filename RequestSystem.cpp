@@ -15,7 +15,7 @@ Request RequestSystem::getNextRequest() const {
 }
 
 void RequestSystem::removeRequest(int fromFloor) {
-    for (int i = 0; i < pendingRequests.size(); i++) {
+    for (int i = 0; i < (int)pendingRequests.size(); i++) {
         if (pendingRequests[i].getFromFloor() == fromFloor) {
             pendingRequests.erase(pendingRequests.begin() + i);
             return;
