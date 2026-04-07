@@ -12,6 +12,10 @@ Features
 -User input during runtime
 -Step-based simulation
 
+## Demo
+
+![Elevator Simulation Demo](Demo.gif)
+
 ## How to Compile the Simulation:
 
 Make sure you have g++ and the ncurses library installed
