@@ -8,13 +8,13 @@ using namespace std;
 
 class Elevator {
     private:
-        int id;
-        int currentFloor;
-        int totalFloors;
-        string direction;
-        string doorState;
+        int id; //Unique elevator identifier
+        int currentFloor; //Floor elevator is currently on
+        int totalFloors; // Total floors in the building
+        string direction; // Current movement direction
+        string doorState; // Door status
 
-        vector<int> floorQueue;
+        vector<int> floorQueue; // Ordered list of floors this elevator needs to visit
     public:
         //constructor
         Elevator(int id, int totalFloors);
