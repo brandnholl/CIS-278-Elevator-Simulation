@@ -26,6 +26,7 @@ g++ -std=c++17 main.cpp Building.cpp Elevator.cpp RequestSystem.cpp -lncurses -o
 
 -Enter floor requests when prompted
 -The system will assign an elevator
+-Ensure terminal window is at it's maximum view for best experience
 -Watch the console to see movement and status updates
 
 ## Commands
